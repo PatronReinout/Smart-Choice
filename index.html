@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Scroll Horizontally</title>
+
+		<script
+			src="http://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"
+		></script>
+		<!-- Hier wordt jQuery ingeladen -->
+		<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+		<!-- De scroll pluggin inladen -->
+		<script src="js/script.js"></script>
+		<!--Javascript inladen -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- De styling van de gehele website -->
+		<link rel="stylesheet" href="vragenstyle.css" />
+		<!--De styling van iedere vraag/pagina -->
+	</head>
+	<body>
+		<header class="nav-bar">
+			<!--header -->
+			<div class="wrapper-r">
+				<a href="index.html">
+					<div class="logo">
+						<img src="img/Logo.png" />
+					</div>
+				</a>
+				<ul>
+					<li><a href="onder-constructie.html">vergelijker</a></li>
+					<li><a href="onder-constructie.html">Aanbieders</a></li>
+					<li><a href="onder-constructie.html">over-ons</a></li>
+					<li><a href="onder-constructie.html">Inloggen</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<div id="wrapper">
+			<!--Hier zitten alle "pagina's" in die gebruik maken van de overgang  -->
+			<div id="mask">
+				<div id="item1" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 1 -->
+						<a name="item1"></a>
+						<div class="content">
+							<div class="titel">
+								<h2>Kom erachter welke autoverzekering het best jij je past</h2>
+							</div>
+							<div class="text">
+								<p>7 vragen over hoe jij je auto wil gaan gebruiken!</p>
+							</div>
+							<div class="flex-parent jc-center">
+								<button class="beginbutton">
+									<a
+										href="#item2"
+										class="panel"
+										style="text-decoration: none; color: white"
+									>
+										DE QUIZ</a
+									>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 2 -->
+						<a name="item2"></a>
+						<div class="content">
+							<div class="nav">
+								<a href="#item1" class="panel back">←Vorige</a>
+							</div>
+
+							<div class="vraag">
+								<div class="ondertitel">
+									<h2>
+										Dankzij hagelstenen zitten er allerlei deuken in je auto. De
+										schade is 1200€. Wil je hiervoor verzekerd zijn?
+									</h2>
+								</div>
+								<div class="flex-parent jc-center" id="topbutton">
+									<button>
+										<a
+											href="#item3"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Ja, ik wil dat de verzekering alles dekt</a
+										>
+									</button>
+								</div>
+								<div class="flex-parent jc-center">
+									<button>
+										<a
+											href="#item3"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Ja, maar ik ben bereid om 250€ te betalen</a
+										>
+									</button>
+								</div>
+								<div class="flex-parent jc-center">
+									<button>
+										<a
+											href="#item3"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Ja, maar ik ben bereid om 500€ te betalen</a
+										>
+									</button>
+								</div>
+								<div class="flex-parent jc-center">
+									<button>
+										<a
+											href="#item3"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Nee, ik wil mijn premie zo laag mogelijk houden</a
+										>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item3" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 3 -->
+						<a name="item3"></a>
+						<div class="content">
+							<div class="nav">
+								<a href="#item2" class="panel back">←Vorige</a>
+							</div>
+							<div class="vraag">
+								<div class="ondertitel">
+									<h2>Je rijdt tegen een paaltje aan</h2>
+								</div>
+								<video
+									width="70%"
+									controls
+									style="display: block; margin: 0 auto"
+								>
+									<source src="img/Auto rijdt tegen paal aan.mp4" />
+								</video>
+								<div class="ondertitel">
+									<h2>Wil je hiervoor verzekerd zijn?</h2>
+								</div>
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item4"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ja, maar ik ben bereid om 500€ te betalen</a
+											>
+										</button>
+									</div>
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item4"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Nee, ik wil mijn premie zo laag mogelijk houden</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item4" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 4 -->
+						<a name="item4"></a>
+						<div class="content">
+							<div class="nav">
+								<a href="#item3" class="panel back">←Vorige</a>
+							</div>
+							<div class="vraag">
+								<div class="ondertitel">
+									<h2>Hoeveel kilometer ben je van plan te rijden?</h2>
+								</div>
+								<form>
+									<select>
+										<option>Tot en met 7500 kilometer</option>
+										<option>7501 – 10.000 kilometer</option>
+										<option>10.001 – 12.000 kilometer</option>
+										<option>12.000 – 15.000 kilometer</option>
+										<option>15.001 – 20.000 kilometer</option>
+										<option>20.001 – 25.000 kilometer</option>
+										<option>25.001 – 30.000 kilometer</option>
+										<option>Meer dan 30.001 kilometer</option>
+									</select>
+								</form>
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item5"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item5" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 5 -->
+						<a name="item5"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item4" class="panel back">←Vorige</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="voortgang">
+			<!-- De voortgang class zit buiten de scope van de overgangsanimatie class, deze is dus ten alle tijden zichtbaar -->
+			<div class="wrapper-r">
+				<img src="img/start.png" width="100px" height="134px" id="startimg" />
+				<img src="img/auto.png" width="188px" height="87px" id="carimg" />
+				<p>Voortgang</p>
+				<img src="img/finnish.png" width="100px" height="134px" id="endimg" />
+			</div>
+		</footer>
+	</body>
+</html>
