@@ -1,0 +1,200 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.wrapper-r {
+	position: relative;
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.nav-bar {
+	width: 100%;
+	background-color: white;
+	padding: 10px 0;
+}
+
+.nav-bar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 13px;
+	overflow: hidden;
+	margin-left: 60%;
+}
+
+.nav-bar li {
+	float: left;
+}
+
+.nav-bar li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.logo {
+	position: absolute;
+	margin: 10px 0;
+}
+
+.banner {
+	width: 1920px;
+	height: 510px;
+	background-image: url(img/banner.JPG);
+	background-repeat: no-repeat;
+}
+
+.banner-text {
+	width: 600px;
+	position: absolute;
+	top: 150px;
+	color: white;
+	left: 43%;
+}
+.titel-banner {
+	font-size: 35px;
+	margin-bottom: 0px;
+}
+
+.ondertitel-banner {
+	font-size: 24px;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: 200;
+	margin-top: 3px;
+}
+
+button {
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: #f0c808;
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin: 0 2px 0 2px;
+	cursor: pointer;
+	border-radius: 10px;
+	padding: 15px 30px 15px 30px;
+}
+
+.flex-parent {
+	display: flex;
+	justify-content: center;
+}
+
+.sectie1 {
+	width: 100%;
+	height: 350px;
+}
+
+.inleiding {
+	position: absolute;
+	width: 360px;
+	height: 300px;
+	left: 23%;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#inleiding-titel {
+	margin: 20px 0 10px 0;
+	font-weight: 500;
+	font-size: 35px;
+}
+
+.usp {
+	background-image: url(img/usp.JPG);
+	background-size: 360px;
+	background-repeat: no-repeat;
+	position: absolute;
+	margin-top: 30px;
+	width: 360px;
+	height: 300px;
+	left: 56%;
+}
+#over-ons {
+	margin-left: 70px;
+	background-color: #468faf;
+	margin-top: 240px;
+}
+.sectie2 {
+	background-color: #f6f2ee;
+	width: 100%;
+	height: 270px;
+}
+.verzekeraars {
+	position: absolute;
+	left: 23%;
+	margin-top: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+	font-size: 21px;
+}
+.verzekeraars-img {
+	background-image: url(img/verzekeraars.JPG);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 880px;
+	height: 120px;
+	position: absolute;
+	left: 23%;
+	margin-top: 100px;
+}
+
+.sectie3 {
+	width: 100%;
+	height: 293px;
+}
+
+.bespaar {
+	position: absolute;
+	width: 450px;
+	height: 300px;
+	left: 23%;
+	margin-top: 20px;
+}
+.bespaar-titel {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 500;
+}
+
+#bespaar-img {
+	height: 150px;
+	margin-left: 7%;
+	margin-top: 20px;
+}
+
+.quiz-knop {
+	position: absolute;
+	width: 350x;
+	height: 300px;
+	left: 62%;
+	margin-top: 125px;
+}
+
+#gratis {
+	margin-top: 50px;
+	left: 72%;
+	position: absolute;
+	width: 70px;
+}
+
+footer {
+	background-color: #468faf;
+	background-image: url(img/footer.JPG);
+	background-repeat: no-repeat;
+
+	width: 100%;
+	height: 325px;
+	position: absolute;
+}

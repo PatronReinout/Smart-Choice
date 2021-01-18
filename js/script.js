@@ -1,5 +1,3 @@
-
-
 $(function() {						//jQuery
 
 	//haal alle klikbare links op de met de class panel
