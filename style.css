@@ -23,7 +23,7 @@ body {
 	margin: 0;
 	padding: 13px;
 	overflow: hidden;
-	margin-left: 60%;
+	margin-left: 59%;
 }
 
 .nav-bar li {
@@ -103,14 +103,14 @@ body {
 
 #mask {
 	/* Ik wil 5 "pagina's" hebben, daarom is de breedte 500% oftwel 5 keer zo breed  */
-	width: 500%;
+	width: 900%;
 	height: 100%;
 	background-color: #f6f2ee;
 }
 
 .item {
 	/* Voor de breedte van de items moet 100% / door het aantal items delen */
-	width: 20%;
+	width: 11.11%;
 	height: 100%;
 	float: left;
 	background-color: #f6f2ee;
@@ -154,4 +154,10 @@ body {
 .nav {
 	position: absolute;
 	top: 20px;
+}
+
+.resultaat {
+	width: 700px;
+	margin: 0 auto;
+	padding: 20px;
 }

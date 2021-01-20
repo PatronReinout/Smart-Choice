@@ -1,4 +1,12 @@
-$(function() {						//jQuery
+$( document ).ready(function()  {						//jQuery
+	let dekking = ""
+	let risico = ""
+	let kilometer = ""
+	let kenteken = ""
+	let leeftijd1 = ""
+	let woonplaats = ""
+	let schadevrij = ""
+
 
 	//haal alle klikbare links op de met de class panel
 	$('a.panel').click(function () {
@@ -13,6 +21,52 @@ $(function() {						//jQuery
 		return false;
 	});
 
+	$('.vraag #vraag1').click(function(){
+		
+		
+		if($(this).data("dekking") !== undefined){
+			dekking = $(this).data("dekking");
+		}
+		if($(this).data("risico") !== undefined){
+			risico = $(this).data("risico");
+			
+		}
+		console.log(dekking);
+		console.log(risico);
+	})
+	$('.vraag #vraag2').click(function(){
+		
+		console.log(dekking);
+		if(dekking == "onduidelijk"){
+			console.log('WA+');
+			dekking = 'WA+';
+		}
+	})
+
+	$('.vraag #uitzondering').click(function(){
+		
+		dekking = "All risk";
+		console.log(dekking);
+	})
+
+
+	$('.vraag #get-overzicht').click(function(){
+		kenteken = $("#kenteken").val();
+		leeftijd1 = $("#leeftijd-input").val();
+		woonplaats = $("#woonplaats-input").val();
+		schadevrij = $("#schadevrij-input").val();
+		
+		
+		$("#leeftijd-output").html("<b>Leeftijd: </b>" + leeftijd1 + " jaar");
+		$("#woonplaats-output").html("<b>Woonplaats: </b>" + woonplaats);
+		$("#schadevrij-output").html("<b>Schadevrije jaren: </b>" + schadevrij + " jaar");
+		$("#kenteken-ov").html("<b>Kenteken auto: </b>" + kenteken);
+		$("#dekking").html("<b>Dekking: </b>" + dekking);
+		$("#risico").html("<b>Eigen Risico: </b>" + risico)		;
+		$("#kilometer").html("<b>Geschatte kilometers: </b>" + kilometer);
+		console.log(leeftijd, woonplaats, schadevrij);
+	}) 
+
 	// past de grootte van alle items aan volgens de nieuwe browsergrootte
 	$(window).resize(function () {
 		// de resizePanel functie wordt opgeroepen
@@ -24,7 +78,7 @@ $(function() {						//jQuery
 	$(".jc-center button a").click(function(){
 
 		$("#carimg").animate({	//dit zorgt ervoor dat de auto 20% in 1500 ms naar rechts gaat
-			left: "+=20%"
+			left: "+=14.29%"
 		}, 1500);
 
 
@@ -33,13 +87,15 @@ $(function() {						//jQuery
 	//haalt alle klikbare elementen op onder de class "item" en ".back"
 	$(".item .back").click(function(){
 		$("#carimg").animate({
-			left:"-=20%"		//dit zorgt ervoor dat de auto 20% in 1500 ms naar links gaat
+			left:"-=14.29%"		//dit zorgt ervoor dat de auto 20% in 1500 ms naar links gaat
 		}, 1500);
 
 
 	});
 
 	
+
+
 });
 
 function resizePanel() {
@@ -56,4 +112,5 @@ function resizePanel() {
 	$('#mask').css({width: mask_width, height: height});
 
 }
+
 

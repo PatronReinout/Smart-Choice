@@ -3,7 +3,6 @@ const merk = document.getElementById("merk");
 const massa_rijklaar = document.getElementById("massa_rijklaar");
 const prijs = document.getElementById("prijs");
 let kenteken = "";
-console.log(kenteken);
 
 
 
@@ -24,12 +23,12 @@ const getInfo = () => {
 
 
 const setInfo = () => {
-  console.log(kenteken);
   const path = array.data;
   merk.innerHTML = "<b>Merk auto: </b>" + path.merk;
   massa_rijklaar.innerHTML = "<b>Gewicht: </b>" + path.massa_rijklaar + "kg";
   prijs.innerHTML = "<b>Nieuwprijs: </b> €" + path.catalogusprijs;
  };
 
+ 
 
 

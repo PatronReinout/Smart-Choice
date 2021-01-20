@@ -29,8 +29,8 @@
 					</div>
 				</a>
 				<ul>
-					<li><a href="onder-constructie.html">vergelijker</a></li>
-					<li><a href="onder-constructie.html">Aanbieders</a></li>
+					<li><a href="vergelijker.html">Vergelijker</a></li>
+					<li><a href="vergelijker.html">Aanbieders</a></li>
 					<li><a href="onder-constructie.html">over-ons</a></li>
 					<li><a href="onder-constructie.html">Inloggen</a></li>
 				</ul>
@@ -44,6 +44,7 @@
 					<div class="wrapper-r">
 						<!--Pagina 1 -->
 						<a name="item1"></a>
+
 						<div class="content">
 							<div class="titel">
 								<h2>Kom erachter welke autoverzekering het best jij je past</h2>
@@ -51,6 +52,7 @@
 							<div class="text">
 								<p>7 vragen over hoe jij je auto wil gaan gebruiken!</p>
 							</div>
+
 							<div class="flex-parent jc-center">
 								<button class="beginbutton">
 									<a
@@ -84,7 +86,10 @@
 								<div class="flex-parent jc-center" id="topbutton">
 									<button>
 										<a
+											id="vraag1"
 											href="#item3"
+											data-dekking="onduidelijk"
+											data-risico="Niet van toepassing"
 											class="panel"
 											style="text-decoration: none; color: black"
 										>
@@ -93,9 +98,12 @@
 									</button>
 								</div>
 								<div class="flex-parent jc-center">
-									<button>
+									<button type="button" class="btn">
 										<a
+											id="vraag1"
 											href="#item3"
+											data-dekking="WA"
+											data-risico="€250,-"
 											class="panel"
 											style="text-decoration: none; color: black"
 										>
@@ -106,7 +114,10 @@
 								<div class="flex-parent jc-center">
 									<button>
 										<a
+											id="vraag1"
 											href="#item3"
+											data-dekking="WA"
+											data-risico="€500,-"
 											class="panel"
 											style="text-decoration: none; color: black"
 										>
@@ -117,7 +128,9 @@
 								<div class="flex-parent jc-center">
 									<button>
 										<a
+											id="vraag1"
 											href="#item3"
+											data-dekking="WA"
 											class="panel"
 											style="text-decoration: none; color: black"
 										>
@@ -158,17 +171,21 @@
 												href="#item4"
 												class="panel"
 												style="text-decoration: none; color: black"
+												id="uitzondering"
+												data-dekking="All risk"
 											>
-												Ja, maar ik ben bereid om 500€ te betalen</a
+												Ja</a
 											>
 										</button>
 									</div>
 									<div class="jc-center">
 										<button>
 											<a
+												id="vraag2"
 												href="#item4"
 												class="panel"
 												style="text-decoration: none; color: black"
+												data-dekking="WA"
 											>
 												Nee, ik wil mijn premie zo laag mogelijk houden</a
 											>
@@ -192,15 +209,15 @@
 									<h2>Hoeveel kilometer ben je van plan te rijden?</h2>
 								</div>
 								<form>
-									<select>
-										<option>Tot en met 7500 kilometer</option>
-										<option>7501 – 10.000 kilometer</option>
-										<option>10.001 – 12.000 kilometer</option>
-										<option>12.000 – 15.000 kilometer</option>
-										<option>15.001 – 20.000 kilometer</option>
-										<option>20.001 – 25.000 kilometer</option>
-										<option>25.001 – 30.000 kilometer</option>
-										<option>Meer dan 30.001 kilometer</option>
+									<select id="kilometer-data">
+										<option value="1">Tot en met 7500 kilometer</option>
+										<option value="2">7501 – 10.000 kilometer</option>
+										<option value="3">10.001 – 12.000 kilometer</option>
+										<option value="4">12.000 – 15.000 kilometer</option>
+										<option value="5">15.001 – 20.000 kilometer</option>
+										<option value="6">20.001 – 25.000 kilometer</option>
+										<option value="7">25.001 – 30.000 kilometer</option>
+										<option value="8">Meer dan 30.001 kilometer</option>
 									</select>
 								</form>
 								<div class="flex-parent">
@@ -232,6 +249,24 @@
 							<div class="ondertitel" id="kent">
 								<h2>Algemene gegevens</h2>
 							</div>
+							<p>
+								<b>Leeftijd:</b>
+								<input id="leeftijd-input" style="margin-left: 18%" />
+							</p>
+							<p>
+								<b>Woonplaats:</b>
+								<input id="woonplaats-input" style="margin-left: 13.3%" />
+							</p>
+							<p>
+								<b>Aantal schadevrije jaren:</b>
+								<input id="schadevrij-input" />
+								<a
+									style="font-size: 12px; text-decoration: none"
+									href="https://www.consumentenbond.nl/autoverzekering/schadevrije-jaren"
+									target="blank"
+									><i>Wat zijn dit?</i></a
+								>
+							</p>
 							<input
 								id="kenteken"
 								oninput="this.value = this.value.toUpperCase()"
@@ -239,12 +274,156 @@
 							<p id="merk"></p>
 							<p id="massa_rijklaar"></p>
 							<p id="prijs"></p>
+							<div class="get-overzicht">
+								<button onclick="getInfo()" id="haalop">
+									Haal kenteken gegevens op
+								</button>
 
-							<button onclick="getInfo()" id="haalop">
-								Haal kenteken gegevens op
-							</button>
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												id="get-overzicht"
+												href="#item6"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
 							<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 							<script src="js/script-kenteken.js"></script>
+						</div>
+					</div>
+				</div>
+				<div id="item6" class="item">
+					<div class="wrapper-r">
+						<!--Pagina 6 -->
+						<a name="item6"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item5" class="panel back">←Vorige</a>
+						</div>
+						<div class="vraag">
+							<div class="ondertitel">
+								<h2>Overzicht</h2>
+							</div>
+							<div class="overzicht">
+								<p id="leeftijd-output"></p>
+								<p id="woonplaats-output"></p>
+								<p id="schadevrij-output"></p>
+								<p id="kenteken-ov"></p>
+								<p id="dekking"></p>
+								<p id="risico"></p>
+								<p id="kilometer"></p>
+							</div>
+							<div class="flex-parent">
+								<div class="jc-center">
+									<button>
+										<a
+											href="#item7"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Bekijk de lijst</a
+										>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item7" class="item">
+					<!--Wa -->
+					<div class="wrapper-r">
+						<!--Pagina 7 -->
+						<a name="item7"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+						<div class="vraag">
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat">
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item1"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Opnieuw</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item8" class="item">
+					<!--WA+ -->
+					<div class="wrapper-r">
+						<!--Pagina 8 -->
+						<a name="item8"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+						<div class="ondertitel">
+							<h2>WA+</h2>
+						</div>
+						<div class="vraag">
+							<div class="flex-parent">
+								<div class="jc-center">
+									<button>
+										<a
+											href="#item6"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Ga verder</a
+										>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item9" class="item">
+					<!--All Risk -->
+					<div class="wrapper-r">
+						<!--Pagina 9 -->
+						<a name="item8"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+						<div class="ondertitel">
+							<h2>All Risk</h2>
+						</div>
+						<div class="vraag">
+							<div class="flex-parent">
+								<div class="jc-center">
+									<button>
+										<a
+											href="#item6"
+											class="panel"
+											style="text-decoration: none; color: black"
+										>
+											Ga verder</a
+										>
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

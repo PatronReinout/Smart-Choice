@@ -76,6 +76,8 @@ button {
 	margin: 50px auto 0 auto;
 }
 
+
+
 .vorige {
 	text-align: left;
 	margin-top: 43px;
@@ -137,4 +139,8 @@ input[type="text"],
 
 #kent {
 	text-align: left;
+}
+
+.overzicht{
+	margin: 50px 0 0 70px;
 }
