@@ -198,3 +198,38 @@ footer {
 	height: 325px;
 	position: absolute;
 }
+
+.banner1 {
+	display: flex;
+	background-image: url(img/bannerdekking.jpg);
+	background-size: cover;
+	height: 300px;
+	align-items: flex-start;
+}
+.flex-parent {
+	display: flex;
+	justify-content: space-between;
+}
+
+.text {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.alinea1 {
+	margin-right: 250px;
+}
+
+.alinea1 h1,
+.alinea1 h2,
+.alinea1 h4 {
+	color: #152c36;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	background-color: #468faf;
+	margin-bottom: 0%;
+}

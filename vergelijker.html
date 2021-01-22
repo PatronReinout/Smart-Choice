@@ -30,7 +30,7 @@
 				</a>
 				<ul>
 					<li><a href="vergelijker.html">Vergelijker</a></li>
-					<li><a href="vergelijker.html">Aanbieders</a></li>
+					<li><a href="onder-constructie.html">Aanbieders</a></li>
 					<li><a href="onder-constructie.html">over-ons</a></li>
 					<li><a href="onder-constructie.html">Inloggen</a></li>
 				</ul>
@@ -68,9 +68,16 @@
 					</div>
 				</div>
 				<div id="item2" class="item">
+					<div class="cloud">
+						<div class="wolk1">
+							<img src="img/wolk.png" />
+						</div>
+						<div class="wolk2"><img src="img/bliksem.png" /></div>
+					</div>
 					<div class="wrapper-r">
 						<!--Pagina 2 -->
 						<a name="item2"></a>
+
 						<div class="content">
 							<div class="nav">
 								<a href="#item1" class="panel back">←Vorige</a>
@@ -152,7 +159,7 @@
 							</div>
 							<div class="vraag">
 								<div class="ondertitel">
-									<h2>Je rijdt tegen een paaltje aan</h2>
+									<h2 class="vraag2">Je rijdt tegen een paaltje aan</h2>
 								</div>
 								<video
 									width="60%"
@@ -162,7 +169,7 @@
 									<source src="img/Auto rijdt tegen paal aan.mp4" />
 								</video>
 								<div class="ondertitel">
-									<h2>Wil je hiervoor verzekerd zijn?</h2>
+									<h2 class="vraag2">Wil je hiervoor verzekerd zijn?</h2>
 								</div>
 								<div class="flex-parent">
 									<div class="jc-center">
@@ -187,10 +194,18 @@
 												style="text-decoration: none; color: black"
 												data-dekking="WA"
 											>
-												Nee, ik wil mijn premie zo laag mogelijk houden</a
+												Nee</a
 											>
 										</button>
 									</div>
+								</div>
+								<div class="flex-parent">
+									<button class="info">
+										<b>Tip:</b> Wanneer schade je eigen schuld is moet je een
+										allrisk verzekering hebben. <br />
+										Meer weten over de verschillende dekkingen?
+										<a href="dekking.html"><b>Klik hier</b> </a>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -267,10 +282,14 @@
 									><i>Wat zijn dit?</i></a
 								>
 							</p>
-							<input
-								id="kenteken"
-								oninput="this.value = this.value.toUpperCase()"
-							/>
+							<p>
+								<b>Kenteken:</b>
+								<input
+									style="margin-left: 16%"
+									id="kenteken"
+									oninput="this.value = this.value.toUpperCase()"
+								/>
+							</p>
 							<p id="merk"></p>
 							<p id="massa_rijklaar"></p>
 							<p id="prijs"></p>
@@ -281,7 +300,7 @@
 
 								<div class="flex-parent">
 									<div class="jc-center">
-										<button>
+										<button id="next">
 											<a
 												id="get-overzicht"
 												href="#item6"
@@ -320,13 +339,15 @@
 								<p id="risico"></p>
 								<p id="kilometer"></p>
 							</div>
+
 							<div class="flex-parent">
 								<div class="jc-center">
 									<button>
 										<a
-											href="#item7"
+											id="lijst"
 											class="panel"
 											style="text-decoration: none; color: black"
+											href="#item7"
 										>
 											Bekijk de lijst</a
 										>
@@ -350,6 +371,29 @@
 								<h2>
 									Gefeliciteerd! We hebben een verzekering voor je gevonden.
 								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/FBTO.png" />
+									<img src="img/voordelen1.JPG" style="width: 190px" />
+									<h2 class="prijs">€34,67</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/unive.png" />
+									<img src="img/voordelen2.JPG" style="width: 190px" />
+									<h2 class="prijs">€31,53</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/allianz.png" />
+									<img src="img/voordelen3.JPG" style="width: 190px" />
+									<h2 class="prijs">€38,46</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
 							</div>
 							<div class="resultaat">
 								<div class="flex-parent">
@@ -378,10 +422,36 @@
 						<div class="nav">
 							<a href="#item6" class="panel back">←Vorige</a>
 						</div>
-						<div class="ondertitel">
-							<h2>WA+</h2>
-						</div>
+
 						<div class="vraag">
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/unive.png" />
+									<img src="img/voordelen4.JPG" style="width: 190px" />
+									<h2 class="prijs">€74,67</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/nationale.png" />
+									<img src="img/voordelen6.JPG" style="width: 190px" />
+									<h2 class="prijs">€71,53</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/FBTO.png" />
+									<img src="img/voordelen1.JPG" style="width: 190px" />
+									<h2 class="prijs">€79,46</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+							</div>
 							<div class="flex-parent">
 								<div class="jc-center">
 									<button>
@@ -402,26 +472,225 @@
 					<!--All Risk -->
 					<div class="wrapper-r">
 						<!--Pagina 9 -->
-						<a name="item8"></a>
+						<a name="item9"></a>
 						<div class="content"></div>
 						<div class="nav">
 							<a href="#item6" class="panel back">←Vorige</a>
 						</div>
-						<div class="ondertitel">
-							<h2>All Risk</h2>
-						</div>
+
 						<div class="vraag">
-							<div class="flex-parent">
-								<div class="jc-center">
-									<button>
-										<a
-											href="#item6"
-											class="panel"
-											style="text-decoration: none; color: black"
-										>
-											Ga verder</a
-										>
-									</button>
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/unive.png" />
+									<img src="img/voordelen3.JPG" style="width: 190px" />
+									<h2 class="prijs">€118,47</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/ohra.jpg" />
+									<img src="img/voordelen2.JPG" style="width: 190px" />
+									<h2 class="prijs">€102,93</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/Aegon.png" />
+									<img src="img/voordelen5.JPG" style="width: 190px" />
+									<h2 class="prijs">€123,57</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+							</div>
+							<div class="vraag">
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item6"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item10" class="item">
+					<!--All Risk -->
+					<div class="wrapper-r">
+						<!--Pagina 10 -->
+						<a name="item10"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+
+						<div class="vraag">
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/ohra.jpg" />
+									<img src="img/voordelen4.JPG" style="width: 190px" />
+									<h2 class="prijs">€21,47</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/nationale.png" />
+									<img src="img/voordelen3.JPG" style="width: 190px" />
+									<h2 class="prijs">€17,93</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/Aegon.png" />
+									<img src="img/voordelen1.JPG" style="width: 190px" />
+									<h2 class="prijs">€25,57</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+							</div>
+							<div class="vraag">
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item6"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item11" class="item">
+					<!--All Risk -->
+					<div class="wrapper-r">
+						<!--Pagina 11 -->
+						<a name="item11"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+
+						<div class="vraag">
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/Aegon.png" />
+									<img src="img/voordelen4.JPG" style="width: 190px" />
+									<h2 class="prijs">€46,12</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/FBTO.png" />
+									<img src="img/voordelen6.JPG" style="width: 190px" />
+									<h2 class="prijs">€42,46</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/ohra.jpg" />
+									<img src="img/voordelen1.JPG" style="width: 190px" />
+									<h2 class="prijs">€50,88</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+							</div>
+							<div class="vraag">
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item6"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item12" class="item">
+					<!--All Risk -->
+					<div class="wrapper-r">
+						<!--Pagina 12 -->
+						<a name="item12"></a>
+						<div class="content"></div>
+						<div class="nav">
+							<a href="#item6" class="panel back">←Vorige</a>
+						</div>
+
+						<div class="vraag">
+							<div class="ondertitel">
+								<h2>
+									Gefeliciteerd! We hebben een verzekering voor je gevonden.
+								</h2>
+							</div>
+							<div class="resultaat1">
+								<div class="flexbox-item nummer1">
+									<img src="img/FBTO.png" />
+									<img src="img/voordelen3.JPG" style="width: 190px" />
+									<h2 class="prijs">€88,29</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer2">
+									<img src="img/unive.png" />
+									<img src="img/voordelen2.JPG" style="width: 190px" />
+									<h2 class="prijs">€83,71</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+								<div class="flexbox-item nummer3">
+									<img src="img/nationale.png" />
+									<img src="img/voordelen5.JPG" style="width: 190px" />
+									<h2 class="prijs">€93,47</h2>
+									<p>Per maand</p>
+									<button>Kies deze</button>
+								</div>
+							</div>
+							<div class="vraag">
+								<div class="flex-parent">
+									<div class="jc-center">
+										<button>
+											<a
+												href="#item6"
+												class="panel"
+												style="text-decoration: none; color: black"
+											>
+												Ga verder</a
+											>
+										</button>
+									</div>
 								</div>
 							</div>
 						</div>

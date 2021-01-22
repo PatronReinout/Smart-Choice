@@ -103,14 +103,14 @@ body {
 
 #mask {
 	/* Ik wil 5 "pagina's" hebben, daarom is de breedte 500% oftwel 5 keer zo breed  */
-	width: 900%;
+	width: 1200%;
 	height: 100%;
 	background-color: #f6f2ee;
 }
 
 .item {
 	/* Voor de breedte van de items moet 100% / door het aantal items delen */
-	width: 11.11%;
+	width: 8.33%;
 	height: 100%;
 	float: left;
 	background-color: #f6f2ee;
@@ -121,7 +121,6 @@ body {
 	height: 100%;
 	top: 0%;
 	margin: 0 auto;
-	background-color: #f6f2ee;
 	position: relative;
 }
 
@@ -160,4 +159,76 @@ body {
 	width: 700px;
 	margin: 0 auto;
 	padding: 20px;
+}
+.resultaat1 {
+	display: flex;
+	align-items: center;
+}
+
+.flexbox-item {
+	width: 300px;
+	margin: 10px;
+	background-color: white;
+}
+
+.nummer1 {
+	min-height: 350px;
+	margin-top: 30px;
+}
+.nummer2 {
+	min-height: 350px;
+	margin-top: 0;
+}
+.nummer3 {
+	min-height: 350px;
+	margin-top: 30px;
+}
+
+.nummer1 img {
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+.nummer2 img {
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+.nummer3 img {
+	width: 150px;
+	display: block;
+	margin: auto;
+}
+
+.prijs {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.resultaat1 p {
+	text-align: center;
+	font-size: 18px;
+	margin-top: 7px;
+}
+
+.resultaat1 button {
+	background-color: #468faf;
+	width: 130px;
+	height: 40px;
+	border-radius: 10px;
+	margin: auto 40px;
+}
+
+.info {
+	color: black;
+	width: 600px;
+	padding: 10px 15px;
+	border-radius: 35px;
+	box-shadow: 0 19px 15px -9px #b1b1b1;
+}
+
+.vraag2 {
+	margin: 10px 0;
 }
