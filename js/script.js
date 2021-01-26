@@ -69,18 +69,39 @@ $( document ).ready(function()  {						//jQuery
 
 	$('.vraag #lijst').click(function(){
 		leeftijd = parseInt(leeftijd1);
-		console.log(leeftijd);
-		/*
+		console.log(dekking);		
+
 			if(dekking == "WA"){
-			if(leeftijd1 < 26){
-				window.location.href = "http://www.google.com";
-				console.log("Jonger dan 26 jaar");
-			}
-			else{
-			console.log("Ouder dan 25 jaar");
-			}
+				if(leeftijd1 < 26){
+					$('#wrapper').scrollTo('#item7', 800);
+					console.log("Jonger dan 26 jaar");
 				}
-*/
+				else{
+					$('#wrapper').scrollTo('#item10', 800);
+					console.log("Ouder dan 25 jaar");
+				}
+			}
+			if(dekking == "WA+"){
+				if(leeftijd1 < 26){
+					$('#wrapper').scrollTo('#item8', 800);
+					console.log("Jonger dan 26 jaar");
+				}
+				else{
+					$('#wrapper').scrollTo('#item11', 800);
+					console.log("Ouder dan 25 jaar");
+				}
+			}
+			if(dekking == "All risk"){
+				if(leeftijd1 < 26){
+					$('#wrapper').scrollTo('#item9', 800);
+					console.log("Jonger dan 26 jaar");
+				}
+				else{
+					$('#wrapper').scrollTo('#item12', 800);
+					console.log("Ouder dan 25 jaar");
+				}
+			}
+
 
 
 	})
@@ -90,6 +111,38 @@ $( document ).ready(function()  {						//jQuery
 		resizePanel();
 	});
 
+		$('.vraag #kilometer-data').click(function(){
+		kilometer = $(this).val();
+		switch(kilometer){
+			case '1':
+			kilometer = "0 tot en met 7500 kilometer";
+			break
+			case '2': 
+			kilometer = "7500 tot en met 10.000 kilometer";
+			break
+			case '3':
+			kilometer = "10.000 tot en met 12.000 kilometer";
+			break
+			case '4': 
+			kilometer = "12.000 tot en met 15.000 kilometer";
+			break
+			case '5':
+			kilometer = "15.000 tot en met 20.000 kilometer";
+			break
+			case '6': 
+			kilometer = "20.000 tot en met 25.000 kilometer";
+			break
+			case '7':
+			kilometer = "25.000 tot en met 30.000 kilometer";
+			break
+			case '8': 
+			kilometer = "Meer dan 30.000 kilometer";
+			break
+			default:
+			kilometer = "Geen invoer";
+		}	
+		console.log(kilometer);
+	})
 
 	//haal alle klikbare links in knoppen met de class ".jc-center" op
 	$(".jc-center button a").click(function(){
